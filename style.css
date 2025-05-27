@@ -4,16 +4,21 @@ body {
     margin: 0;
     padding: 0;
 }
+
 header {
     background-color: #e96b00;
     color: white;
     text-align: center;
     padding: 1rem 0;
 }
+
 .logo {
-    width: 80px;
+    width: 120px;
+    height: auto;
+    display: block;
     margin: 10px auto;
 }
+
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -22,16 +27,19 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
+
 form label {
     display: block;
     margin-top: 10px;
     font-weight: bold;
 }
+
 select {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
 }
+
 button {
     background-color: #e96b00;
     color: white;
@@ -41,15 +49,18 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
 button:hover {
     background-color: #c45b00;
 }
+
 #result {
     margin-top: 20px;
     background-color: #fff6d5;
     padding: 1rem;
     border-radius: 5px;
 }
+
 .hidden {
     display: none;
 }
@@ -76,13 +87,8 @@ fieldset.question-block label {
 fieldset.question-block input[type="radio"] {
     margin-right: 8px;
 }
-.logo {
-    width: 80px;
-    height: auto;
-    display: block;
-    margin: 10px auto;
-}
 
+/* Estilos para dispositivos móviles */
 @media (max-width: 600px) {
     .logo {
         width: 80px;
@@ -100,9 +106,7 @@ fieldset.question-block input[type="radio"] {
     header p {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 600px) {
     button {
         width: 100%;
         font-size: 1.1rem;
@@ -118,6 +122,27 @@ fieldset.question-block input[type="radio"] {
     }
 
     #result {
+        font-size: 1rem;
+    }
+}
+
+/* Fondo de montaña y ajustes de legibilidad */
+body {
+    background: url('fondo_montaña.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+main, #result, fieldset.question-block {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+
+fieldset.question-block label,
+fieldset.question-block legend {
+    color: white;
+}
+
         font-size: 1rem;
     }
 }
